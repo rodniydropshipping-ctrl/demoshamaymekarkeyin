@@ -131,6 +131,9 @@ a:hover {
 /* Mobile Navigation */
 @media (max-width: 768px) {
     .nav {
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
         gap: 1.5rem;
         font-size: 0.85rem;
     }
