@@ -773,3 +773,42 @@ section {
         background: #000;
     }
 }
+/* MOBILE MENU FIX */
+@media (max-width: 768px) {
+
+  /* תפריט אופקי ולא ככותרת גדולה */
+  nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    padding: 5px 0 !important;
+    background: #ffffff !important;
+  }
+
+  nav ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  nav ul li a {
+    font-size: 16px !important;
+    padding: 6px 10px !important;
+  }
+
+  /* אם יש תפריט המבורגר */
+  .nav-toggle {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: 8px !important;
+  }
+
+  /* הסרת גובה מלא על התפריט */
+  nav {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
